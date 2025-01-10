@@ -16,12 +16,11 @@ const Home = () => {
             I'm a Full Stack Developer
           </h1>
           <p className='text-gray-500 py-4 max-w-md'>
-            Hi, I'm Ayush Goyal, a 3rd-year Computer Science Engineering student
-            passionate about software development and AI-driven cybersecurity
-            solutions. I have hands-on experience with technologies like
-            Express.js, Bootstrap, MongoDB, Java, and JavaScript. I'm eager to
-            explore innovative solutions and continuously enhance my technical
-            skills.
+            Hi, I'm Ayush Goyal Computer Science Engineering student passionate
+            about software development solutions. I have hands-on experience
+            with technologies like Express.js, Bootstrap, MongoDB, Java, and
+            JavaScript. I'm eager to explore innovative solutions and
+            continuously enhance my technical skills.
           </p>
           <div>
             <button
