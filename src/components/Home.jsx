@@ -48,7 +48,7 @@ const Home = () => {
           <img
             src={ayushgoyal}
             alt='my profile'
-            className='rounded-3xl mx-auto w-3/4 sm:w-2/3 md:w-full lg:h-[400px] object-cover'
+            className='rounded-3xl mx-auto w-1/3 sm:w-2/3 md:w-full lg:h-[400px] object-cover'
           />
         </div>
       </div>
