@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi'; // Heroicons
 import { BsFillPersonLinesFill } from 'react-icons/bs'; // Bootstrap Icons
+import Resume from '../util/ayush_er.pdf';
 
 const SocialLinks = () => {
   const links = [
@@ -40,7 +41,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: '/path/to/resume.pdf', // Replace with actual path to the resume file
+      href: Resume, 
       style: 'rounded-br-md',
       download: true,
     },

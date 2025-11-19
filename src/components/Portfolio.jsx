@@ -55,23 +55,33 @@
 //   )
 // }
 import React from 'react'
-import wanderlust from '../assets/portfolio/wanderlust.jpg'
-import tracking from '../assets/portfolio/tracking.jpg'
-import zoomclone from '../assets/portfolio/zoomclone.jpg'
+import wanderlust from '../assets/portfolio/kk.jpg'
+import tracking from '../assets/portfolio/k2.png'
+import zoomclone from '../assets/portfolio/k1.jpg'
+
 
 export const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: wanderlust
+      name:"MeetHUB",
+      src: zoomclone,
+      link:"https://meethub-libr.onrender.com/",
+      code:"https://github.com/Ayushhgi/MeetHUB"
     },
     {
       id: 2,
-      src: tracking
+      name:"WanderLust",
+      src: tracking,
+      link:"https://wanderlust-se2s.onrender.com/",
+      code:"https://github.com/Ayushhgi/WanderLust"
     },
     {
       id: 3,
-      src: zoomclone
+      name:"URLShortner",
+      src: wanderlust,
+      link:"https://github.com/Ayushhgi/URL_sortner",
+      code:"https://github.com/Ayushhgi/URL_sortner"
     }
   ]
   return (
@@ -88,21 +98,28 @@ export const Portfolio = () => {
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src,code,link ,name}) => (
             <div
               key={id}
               className='shadow-md shadow-gray-600 rounded-lg overflow-hidden'
             >
-              <img
-                className='w-full h-56 object-cover duration-200 hover:scale-105'
-                src={src}
-                alt=''
-              />
+           <div className="w-full flex justify-center bg-gray py-6 ">
+  <h1 className="text-4xl duration-200 hover:scale-105  text-white-400 tracking-wide">
+    {name}
+  </h1>
+</div>
+             <div className="overflow-hidden rounded-lg">
+  <img
+    className="w-full h-56 object-cover duration-200 hover:scale-105"
+    src={src}
+    alt=""
+  />
+</div>
               <div className='flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4'>
-                <button className='w-full sm:w-1/2 px-6 py-3 duration-200 hover:scale-105'>
+                <button onClick={() => window.open(link, "_blank")} className='w-full sm:w-1/2 px-6 py-3 duration-200 hover:scale-105'>
                   Demo
                 </button>
-                <button className='w-full sm:w-1/2 px-6 py-3 duration-200 hover:scale-105'>
+                <button onClick={() => window.open(code, "_blank")} className='w-full sm:w-1/2 px-6 py-3 duration-200 hover:scale-105'>
                   Code
                 </button>
               </div>
